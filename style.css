@@ -1,0 +1,72 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  /*corrigido: text-align: end; */
+  text-align: center;
+  margin: 0;
+}
+
+#hero {
+  width: 592px;
+  margin: 0 auto 72px
+    /*margem estava definida para 72px para todos os lados ->margin: 72px;*/
+}
+
+/*O elemento no HTML estava no lugar errado e a margem estava definida em 100px para todos os lados.
+É preciso também referenciar que a imagem em questão pertence ao id #hero
+Isso fez com seu posicionamento na página ficasse totalmente errado. ->margin: 100px;*/
+#hero img {
+  margin-bottom: 72px;
+  
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 49px;
+  line-height: 56px;
+  font-weight: normal;
+  /*existe uma margem inferior de 32px no laytou*/
+  margin-bottom: 32px;
+}
+
+h1 span {
+  font-weight: bold;
+
+  /*margin-bottom: 32px;*/
+}
+
+span,
+a {
+  color: #ff9900;
+}
+
+p,
+#footer {
+  color: #7d7987;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+/*No layout existe uma margem de 33px*/
+#footer {
+    margin-bottom: 33px;
+}
+
+#footer a+a {
+  margin-left: 28px;
+}
+
+.line {
+  width: 568px;
+  height: 0;
+
+  margin: 0 auto 8px;/*Faltou informar que a margens da esquerda e direita são 'auto' ->margin: 0 8px; */
+
+  border: 1px solid #ECEFF2;
+}
+
+#balls {
+  position: fixed;
+ /*Não é posicionado no top, e sim no cando inferior direito ->top: 0;*/
+ bottom: 0;
+  right: 0;
+}
